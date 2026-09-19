@@ -13,14 +13,14 @@ body{font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#f
 a{color:inherit;text-decoration:none}
 nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);box-shadow:0 2px 14px rgba(0,0,0,.06)}
 .nav-inner{max-width:1200px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{font-size:24px;font-weight:900;letter-spacing:1px;color:#111} .logo span{color:var(--red)} 
+.logo{font-size:24px;font-weight:900;letter-spacing:1px;color:#111}.brand-black{color:#111!important}.brand-red{color:var(--red)!important}.tagline-black{color:#111!important}.tagline-red{color:var(--red)!important} 
 .nav-links{display:flex;gap:25px;font-weight:700;font-size:14px}
 .nav-links a:hover{color:var(--red)}
 .hero{max-width:1400px;margin:22px auto 0;position:relative;overflow:hidden;border-radius:24px;min-height:300px;background:linear-gradient(135deg,#fff3df 0%,#e9f6ff 55%,#e9f8f1 100%);box-shadow:0 18px 45px rgba(30,64,90,.13);border:1px solid #d7e5ee}
 .hero img{display:block;width:100%;height:auto;max-height:720px;object-fit:cover}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.28))}
 .hero-content{position:relative;left:auto;bottom:auto;max-width:700px;padding:42px 7%}
-.welcome{font-size:clamp(22px,3vw,34px);font-weight:900;margin-bottom:8px;color:#111;text-transform:none;text-shadow:none;letter-spacing:.2px}
+.welcome{font-size:clamp(22px,3vw,34px);font-weight:900;margin-bottom:8px;color:#111;text-transform:none;text-shadow:none;letter-spacing:.2px}.welcome .brand-black,.welcome .brand-red{font-size:1.55em;font-weight:900;letter-spacing:1px}.hero-content .welcome{margin-bottom:28px}
 .hero-content h1{font-size:clamp(36px,6vw,72px);line-height:1.05;text-transform:uppercase;color:#111;text-shadow:none;margin:0 0 10px}
 .hero-content h1 span{color:var(--red)}
 .hero-content p{margin-top:4px;font-size:18px;font-weight:600;color:#555}
@@ -57,7 +57,7 @@ footer{border-top:1px solid var(--line);text-align:center;padding:25px;color:#77
 <body>
 <nav>
   <div class="nav-inner">
-    <div class="logo">VINAYAKA <span>SPORTS</span></div>
+    <div class="logo"><span class="brand-black">VINAYAKA</span> <span class="brand-red">SPORTS</span></div>
     <div class="nav-links">
       <a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a>
     </div>
@@ -66,8 +66,8 @@ footer{border-top:1px solid var(--line);text-align:center;padding:25px;color:#77
 
 <header id="home" class="hero">
   <div class="hero-content">
-    <div class="welcome">Welcome to Vinayaka Sports</div>
-    <h1>Play<br>Shop Better</h1>
+    <div class="welcome">Welcome to<br><span class="brand-black">Vinayaka</span> <span class="brand-red">Sports</span></div>
+    <h1 style="margin-top:8px"><span class="tagline-black">Gear Up</span><br><span class="tagline-red">Play Better</span></h1>
     
   </div>
 </header>
@@ -75,7 +75,7 @@ footer{border-top:1px solid var(--line);text-align:center;padding:25px;color:#77
 <section id="opening" style="padding-top:38px;padding-bottom:38px">
   <div class="about-box" style="max-width:900px;margin:auto;text-align:center;background:linear-gradient(135deg,#fff0df,#fff9ed,#eaf6ff);border:1px solid #ead9bd">
     <h2>Grand <span>Opening</span></h2>
-    <p>We are excited to welcome you to Vinayaka Sports.</p>
+    <p>We are excited to welcome you to <span class="brand-black">Vinayaka</span> <span class="brand-red">Sports</span>.</p>
     <p style="font-size:42px;font-weight:900;color:#111;margin-top:15px">OCT 11th, 2026</p>
     <p>Come visit us and gear up for a better game.</p>
   </div>
@@ -99,8 +99,8 @@ footer{border-top:1px solid var(--line);text-align:center;padding:25px;color:#77
 <section id="about">
   <div class="about">
     <div class="about-box">
-      <h2>Gear Up. <span>Play Better.</span></h2>
-      <p>Vinayaka Sports brings together cricket, sports, fitness and accessories under one roof. Visit our store and find the gear that fits your game.</p>
+      <h2><span class="tagline-black">Gear Up</span><br><span class="tagline-red">Play Better</span></h2>
+      <p><span class="brand-black">Vinayaka</span> <span class="brand-red">Sports</span> brings together cricket, sports, fitness and accessories under one roof. Visit our store and find the gear that fits your game.</p>
       <div class="features">
         <div class="feature">✓ Quality Products</div>
         <div class="feature">✓ Sports Essentials</div>
@@ -113,7 +113,7 @@ footer{border-top:1px solid var(--line);text-align:center;padding:25px;color:#77
 
 <section id="contact">
   <div class="contact">
-    <h2>Visit <span class="vinayaka">Vinayaka</span> <span>Sports</span></h2>
+    <h2>Visit<br><span class="brand-black">Vinayaka</span> <span class="brand-red">Sports</span></h2>
     <p>Come to our store for cricket, sports, fitness and accessories.</p>
     <div class="contact-details">
       <div>📍 Krishnapuram, Palani Gounder Complex, Madathukulam</div>
@@ -127,7 +127,7 @@ footer{border-top:1px solid var(--line);text-align:center;padding:25px;color:#77
   </div>
 </section>
 
-<footer>© 2026 Vinayaka Sports. All rights reserved.</footer>
+<footer>© 2026 <span class="brand-black">Vinayaka</span> <span class="brand-red">Sports</span>. All rights reserved.</footer>
 <a class="float" href="https://wa.me/919790401686" target="_blank" aria-label="WhatsApp">✆</a>
 </body>
 </html>
